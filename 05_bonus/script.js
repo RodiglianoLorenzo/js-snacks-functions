@@ -10,7 +10,7 @@ const nome = 'Mario';
 let data = new Date().getHours();
 data = 21
 // Dichiara la funzione qui.
-function saluta(){
+function saluta(data){
     if(data <= 13){
         console.log("Buongiorno " , nome)
     }
@@ -23,9 +23,21 @@ function saluta(){
 
 }
 
-saluta()
+saluta(data)
 // Invoca la funzione qui e stampa il risultato in console
 
+let saluta = data =>{
+     if(data <= 13){
+        console.log("Buongiorno " , nome)
+    }
+    else if(data > 13 && data <= 17){
+        console.log("Buon pomeriggio " , nome)
+    }
+    else if(data > 17){
+        console.log("Buona sera ", nome);
+    }
+
+}
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
