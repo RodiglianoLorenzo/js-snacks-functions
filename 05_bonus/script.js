@@ -5,12 +5,25 @@ buon pomeriggio se è pomeriggio (fino alle 17)
 e buonasera se è sera (oltre le 17)
 */
 
-const name = 'Mario';
+const nome = 'Mario';
 
-
+let data = new Date().getHours();
+data = 21
 // Dichiara la funzione qui.
+function saluta(){
+    if(data <= 13){
+        console.log("Buongiorno " , nome)
+    }
+    else if(data > 13 && data <= 17){
+        console.log("Buon pomeriggio " , nome)
+    }
+    else if(data > 17){
+        console.log("Buona sera ", nome);
+    }
 
+}
 
+saluta()
 // Invoca la funzione qui e stampa il risultato in console
 
 
