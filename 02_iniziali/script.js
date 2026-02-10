@@ -27,8 +27,7 @@ const first_letter_of_names = names => {
     const letter_name = []
     for(let i = 0; i < names.length; i++){
         //const char = names[i] 
-        let element = names[i]
-        letter_name.push(element.charAt(0))
+        letter_name.push(names[i].charAt(0))
         console.log("letter is:", letter_name[i]);
         
     }

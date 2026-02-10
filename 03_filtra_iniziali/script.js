@@ -5,9 +5,29 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-
+/* function filterByInitial (names) {
+    const first_letter = []
+ for(let i = 0; i <names.length; i++){
+    let element = names[i]
+    if(element[0] === "A"){
+        first_letter.push(element);
+        console.log(element);
+        
+    }
+ }    
+}
+filterByInitial(names) */
 // Invoca la funzione qui e stampa il risultato in console
 
-
-
+const filterByInitial = names => {
+    const first_letter = []
+    for(let i = 0; i <names.length; i++){
+        if(names[i][0] === "A"){
+            first_letter.push(names[i])
+            console.log(names[i]);
+            
+        }
+    }
+}
+filterByInitial(names)
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
