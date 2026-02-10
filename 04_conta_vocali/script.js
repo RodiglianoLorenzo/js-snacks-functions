@@ -2,32 +2,46 @@
 
 const word = 'javascript';
 
-let  letter_vocali = [];
+let letter_vocali = [];
 
 
 // Dichiara la funzione qui.
 
-function vocale(word){
+function vocale(word) {
 
-    let vocale = ["a","e","i","o","u"]
+    let vocale = ["a", "e", "i", "o", "u"]
 
-    for(let i = 0; i < word.length; i++){
+    for (let i = 0; i < word.length; i++) {
 
-        for(let y = 0; y < vocale.length; y++)
+        for (let y = 0; y < vocale.length; y++)
 
-        if(word[i] === vocale[y]){
+            if (word[i] === vocale[y]) {
 
-            letter_vocali.push(vocale[y])
-        }
-        
+                letter_vocali.push(vocale[y])
+            }
+
     }
-    
+
 }
 vocale(word)
 console.log(letter_vocali);
 
 // Invoca la funzione qui e stampa il risultato in console
 
+const vocali = (word) => {
+    let vocale = ["a", "e", "i", "o", "u"]
 
+    for (let i = 0; i < word.length; i++) {
 
+        for (let y = 0; y < vocale.length; y++)
+
+            if (word[i] === vocale[y]) {
+
+                letter_vocali.push(vocale[y])
+            }
+
+    }
+
+}
+console.log(letter_vocali);
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
